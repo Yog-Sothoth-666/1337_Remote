@@ -6,7 +6,7 @@
 /*   By: ykhaldou <ykhaldou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/18 10:56:35 by ykhaldou          #+#    #+#             */
-/*   Updated: 2026/10/18 10:58:17 by ykhaldou         ###   ########.fr       */
+/*   Updated: 2026/10/25 16:13:40 by ykhaldou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,6 @@ void	ft_putendl_fd(char *s, int fd)
 
 	i = 0;
 	while (s[i])
-		ft_putchar_fd(s[i], fd);
+		ft_putchar_fd(s[i++], fd);
 	write(fd, "\n", 1);
 }

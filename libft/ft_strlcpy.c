@@ -6,7 +6,7 @@
 /*   By: ykhaldou <ykhaldou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/12 16:06:36 by ykhaldou          #+#    #+#             */
-/*   Updated: 2026/10/19 11:24:59 by ykhaldou         ###   ########.fr       */
+/*   Updated: 2026/10/24 15:30:23 by ykhaldou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,10 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 		return (len);
 	i = 0;
 	while (i < (size - 1) && src[i])
+	{
 		dst[i] = src[i];
+		i++;
+	}
 	dst[i] = '\0';
 	return (len);
 }

@@ -6,7 +6,7 @@
 /*   By: ykhaldou <ykhaldou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 12:13:19 by ykhaldou          #+#    #+#             */
-/*   Updated: 2026/10/19 08:32:57 by ykhaldou         ###   ########.fr       */
+/*   Updated: 2026/10/26 09:52:44 by ykhaldou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,6 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		dst[d_len + i] = src[i];
 		i++;
 	}
-	dst[i] = '\0';
+	dst[d_len + i] = '\0';
 	return (d_len + s_len);
 }

@@ -37,7 +37,7 @@ static int	word_count(char const *s, char c)
 
 static char	*craft_word(char const *s, char c)
 {
-	int		len;
+	int	len;
 
 	len = 0;
 	while (s[len] && s[len] != c)
@@ -45,7 +45,7 @@ static char	*craft_word(char const *s, char c)
 	return (ft_substr(s, 0, len));
 }
 
-static char	**ft_freee(char	**strs, int count)
+static char	**ft_freee(char **strs, int count)
 {
 	int	i;
 
