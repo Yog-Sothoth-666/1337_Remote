@@ -6,7 +6,7 @@
 /*   By: ykhaldou <ykhaldou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/18 10:06:56 by ykhaldou          #+#    #+#             */
-/*   Updated: 2026/10/25 15:59:29 by ykhaldou         ###   ########.fr       */
+/*   Updated: 2026/11/02 13:41:03 by ykhaldou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,10 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	int	i;
+	size_t	i;
 
-	i = 0;
-	while (s[i])
-		ft_putchar_fd(s[i++], fd);
+	if (!s)
+		return ;
+	i = ft_strlen(s);
+	write(fd, s, i);
 }

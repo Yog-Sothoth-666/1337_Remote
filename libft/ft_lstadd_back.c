@@ -6,7 +6,7 @@
 /*   By: ykhaldou <ykhaldou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/18 13:10:47 by ykhaldou          #+#    #+#             */
-/*   Updated: 2026/10/19 11:23:42 by ykhaldou         ###   ########.fr       */
+/*   Updated: 2026/10/29 15:00:16 by ykhaldou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,8 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	if (!*lst)
 	{
 		*lst = new;
-		new->next = NULL;
 		return ;
 	}
 	last = ft_lstlast(*lst);
 	last->next = new;
-	new->next = NULL;
 }

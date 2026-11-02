@@ -6,7 +6,7 @@
 /*   By: ykhaldou <ykhaldou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 13:04:38 by ykhaldou          #+#    #+#             */
-/*   Updated: 2026/10/26 11:29:27 by ykhaldou         ###   ########.fr       */
+/*   Updated: 2026/11/02 10:42:20 by ykhaldou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int		i;
-	char	*chr;
+	size_t		i;
+	char		*chr;
 
 	i = ft_strlen(s);
 	chr = NULL;

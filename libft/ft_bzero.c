@@ -6,7 +6,7 @@
 /*   By: ykhaldou <ykhaldou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/12 14:42:52 by ykhaldou          #+#    #+#             */
-/*   Updated: 2026/10/19 10:58:37 by ykhaldou         ###   ########.fr       */
+/*   Updated: 2026/11/02 09:32:46 by ykhaldou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,5 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	unsigned char	*str;
-	size_t			i;
-
-	str = (unsigned char *)s;
-	i = 0;
-	while (i < n)
-		str[i++] = '\0';
+	ft_memset(s, 0, n);
 }

@@ -6,7 +6,7 @@
 /*   By: ykhaldou <ykhaldou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/18 13:32:53 by ykhaldou          #+#    #+#             */
-/*   Updated: 2026/10/18 13:46:38 by ykhaldou         ###   ########.fr       */
+/*   Updated: 2026/10/28 15:30:44 by ykhaldou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	if (!lst || !del || !*lst)
 		return ;
 	current = *lst;
-	while (lst)
+	while (current)
 	{
 		nextptr = current->next;
 		del(current->content);

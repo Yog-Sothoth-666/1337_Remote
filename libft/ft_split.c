@@ -6,7 +6,7 @@
 /*   By: ykhaldou <ykhaldou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/17 10:10:55 by ykhaldou          #+#    #+#             */
-/*   Updated: 2026/10/19 11:29:42 by ykhaldou         ###   ########.fr       */
+/*   Updated: 2026/11/02 15:19:26 by ykhaldou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,6 +62,8 @@ char	**ft_split(char const *s, char c)
 	int		i;
 	char	**strs;
 
+	if (!s)
+		return (NULL);
 	count = word_count(s, c);
 	strs = malloc(sizeof(char *) * (count + 1));
 	if (!strs)

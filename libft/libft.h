@@ -6,16 +6,14 @@
 /*   By: ykhaldou <ykhaldou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/24 13:23:24 by ykhaldou          #+#    #+#             */
-/*   Updated: 2026/10/24 13:25:17 by ykhaldou         ###   ########.fr       */
+/*   Updated: 2026/11/02 19:29:05 by ykhaldou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stddef.h>
 # include <stdlib.h>
-# include <string.h>
 # include <unistd.h>
 
 typedef struct s_list

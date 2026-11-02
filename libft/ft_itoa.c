@@ -6,13 +6,13 @@
 /*   By: ykhaldou <ykhaldou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/17 11:40:28 by ykhaldou          #+#    #+#             */
-/*   Updated: 2026/10/18 09:44:19 by ykhaldou         ###   ########.fr       */
+/*   Updated: 2026/11/02 09:40:14 by ykhaldou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	digitnum(int n)
+static long	digitnum(int n)
 {
 	int		count;
 	long	nb;
@@ -34,7 +34,7 @@ static int	digitnum(int n)
 	return (count);
 }
 
-static char	*createnum(long n, size_t len)
+static char	*createnum(long n, long len)
 {
 	char	*str;
 
@@ -60,7 +60,7 @@ static char	*createnum(long n, size_t len)
 char	*ft_itoa(int n)
 {
 	long	nb;
-	int		len;
+	long	len;
 
 	len = digitnum(n);
 	nb = n;

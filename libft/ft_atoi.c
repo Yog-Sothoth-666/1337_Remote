@@ -6,7 +6,7 @@
 /*   By: ykhaldou <ykhaldou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 19:07:26 by ykhaldou          #+#    #+#             */
-/*   Updated: 2026/10/25 15:49:16 by ykhaldou         ###   ########.fr       */
+/*   Updated: 2026/11/02 14:03:21 by ykhaldou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_atoi(const char *nptr)
 {
-	int					i;
-	unsigned long long	n;
-	int					s;
+	int		i;
+	long	n;
+	int		s;
 
 	i = 0;
 	s = 1;
@@ -31,11 +31,8 @@ int	ft_atoi(const char *nptr)
 	}
 	while (ft_isdigit(nptr[i]))
 	{
-		n *= 10;
-		n += nptr[i] - '0';
+		n = n * 10 + nptr[i] - '0';
 		i++;
 	}
-	if (s == -1)
-		return ((int)-n);
-	return ((int)n);
+	return ((n * s));
 }

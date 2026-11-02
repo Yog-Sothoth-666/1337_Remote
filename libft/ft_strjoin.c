@@ -6,7 +6,7 @@
 /*   By: ykhaldou <ykhaldou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 11:14:50 by ykhaldou          #+#    #+#             */
-/*   Updated: 2026/10/15 12:00:59 by ykhaldou         ###   ########.fr       */
+/*   Updated: 2026/11/02 14:25:41 by ykhaldou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	if (!str)
 		return (NULL);
 	ft_memcpy(str, s1, l1);
-	ft_memcpy(&str[l1], s2, l2);
-	str[l1 + l2] = '\0';
+	ft_memcpy(&str[l1], s2, l2 + 1);
 	return (str);
 }
