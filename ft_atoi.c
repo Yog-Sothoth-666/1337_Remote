@@ -6,11 +6,18 @@
 /*   By: ykhaldou <ykhaldou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 19:07:26 by ykhaldou          #+#    #+#             */
-/*   Updated: 2026/11/02 14:03:21 by ykhaldou         ###   ########.fr       */
+/*   Updated: 2026/11/05 11:12:14 by ykhaldou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static int	ft_guard(int s)
+{
+	if (s > 0)
+		return (-1);
+	return (0);
+}
 
 int	ft_atoi(const char *nptr)
 {
@@ -31,6 +38,8 @@ int	ft_atoi(const char *nptr)
 	}
 	while (ft_isdigit(nptr[i]))
 	{
+		if (n > (LONG_MAX - (nptr[i] - '0')) / 10)
+			return (ft_guard(s));
 		n = n * 10 + nptr[i] - '0';
 		i++;
 	}
