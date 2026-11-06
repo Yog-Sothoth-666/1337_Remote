@@ -6,7 +6,7 @@
 /*   By: ykhaldou <ykhaldou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 18:18:25 by ykhaldou          #+#    #+#             */
-/*   Updated: 2026/11/05 11:49:43 by ykhaldou         ###   ########.fr       */
+/*   Updated: 2026/11/06 11:00:47 by ykhaldou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	const unsigned char	*p2;
 
 	i = 0;
-	if (s1 == s2)
+	if (s1 == s2 && s1 != NULL)
 		return (0);
 	p1 = s1;
 	p2 = s2;
